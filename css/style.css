@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
+}
+
+body {
+  background: #ffe9b3;
+}
+header {
+  display: flex;
+  justify-content: center;
+  height: 320px;
+}
+.img-header {
+  margin-top: -80px;
+  width: 500px;
+}
+main {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: solid 3px #ed8a2f;
+  background: #fdaa5e;
+}
+
+.img-footer {
+ margin: -50px 0px;
+  width: 250px;
+}
+.copyright {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
+.copyright p {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Cards */
+.card-spacing {
+  margin: auto;
+  max-width: 80%;
+}
+
+.card-1 {
+  margin: auto;
+  width: 300px;
+  background: #fbeeda;
+  border: solid 2px rgba(0, 0, 0, 0.205);
+  border-radius: 15px;
+  box-shadow: -4px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-2 {
+  margin: 20px auto;
+  padding: 15px 0;
+  width: 500px;
+  background: #fbeeda;
+  border: solid 2px rgba(0, 0, 0, 0.205);
+  border-radius: 15px;
+  box-shadow: -4px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* style for texts */
+.text-box {
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0px;
+  padding: 8px 5px;
+  background-color: #fbfbfb;
+  border: solid 2px #ed8b2fb6;
+  border-radius: 10px;
+}
+
+.amount {
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-text {
+  font-weight: 700;
+}
+
+.table-text {
+  padding: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.table-arrow {
+  font-size: 45px;
+  padding: 0px 50px;
+  color: #ec7e16;
+}
+.new-calc-text {
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Style for inputs */
+input {
+  text-align: center;
+  height: 30px;
+  width: 25%;
+  background-color: #fbfbfb;
+  border: solid 2px #ed8b2fb6;
+  border-radius: 5px;
+}
+
+input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.input-ingredient {
+  font-size: 15px;
+  width: 100px;
+  padding: 15px 0px;
+  border-radius: 10px;
+}
+
+/* Style for buttons */
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 25px auto;
+  padding: 3px;
+  max-width: 50%;
+  font-size: 20px;
+  color: white;
+  background-color: #fdaa5e;
+  border: solid 2px #ed8a2f;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: 300ms;
+  box-shadow: -2px 3px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.15);
+}
+.btn:active {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7);
+  transform: scale(1);
+  transition: 100ms;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .card-2 {
+    transform: scale(0.8);
+    margin-left: -35px;
+  }
+}

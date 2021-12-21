@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mise En Place - calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="img-header">
+        <img src="img/logo-3.png" alt="logo-headder">
+      </div>
+    </header>
+    <main>
+      <section class="container card-1  ">
+        <div class="card-spacing">
+          <p class="text-box home-text">
+            Bem vindo ao mise-en-place! Seu conversor de porções de receitas
+            prático! Insira abaixo as informações para iniciarmos:
+          </p>
+          <div class="amount">
+            <p class="text-box">Qual a número de ingredientes?</p>
+            <input type="text" name="number-ingredients" />
+          </div>
+          <div class="amount">
+            <p class="text-box">Qual a quantidade de pessoas?</p>
+            <input type="text" name="number-ingredients" />
+          </div>
+          <div>
+            <button class="btn">Avançar</button>
+          </div>
+        </div>
+      </section>
+      <section class="container card-2">
+        <div class="card-spacing">
+          <p class="text-box table-text">
+            Insira nas colunas da esquerda as quantidades dos ingredientes para
+            convertê-la
+          </p>
+          <p  class="text-box ">Digite as quantidades <b>somente </b>em números</p>
+          <table>
+            <tr>
+              <td>
+                <p class="text-box table-text">Quantidade padrão</p>
+              </td>
+              <td class="table-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </td>
+              <td>
+                <p class="text-box table-text">quantidade para x pessoas</p>
+              </td>
+            </tr>
+            <tr class="ingredient-number">
+                <tr>
+                    <td></td>
+                    <td>
+                        <p class="table-text ">Ingrediente : 1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table-text">
+                        <input type="text"class="input-ingredient" >
+                      </td>
+                      <td class="table-arrow">
+                          <i class="fas fa-arrow-right"></i>
+                      </td>
+                      <td>
+                        <p class="table-text text-box text-coverted-ingredient"></p>
+                      </td>
+                </tr>
+            </tr>
+          </table>
+          <button class="btn">Novo ingrediente</button>
+          <p class="new-calc-text">Clique no botão abaixo para mudar  o cálculo para um novo número de pessoas</p>
+          <button class="btn">Novo cálculo</button>
+        </div>
+
+      </section>
+    </main>
+    <footer>
+      <div class="img-footer">
+        <img src="img/logo-2.png" alt="logo-footer">
+      </div>
+      <div class="copyright">
+        <div>
+          <p>
+            &copy; Copyright  Mise En Place - 2021 feito por Gabriel R. Rodrgues
+          </p>
+        </div>
+       
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
