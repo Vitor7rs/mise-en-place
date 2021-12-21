@@ -12,7 +12,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  height: 320px;
+  height: 280px;
 }
 .img-header {
   margin-top: -80px;
@@ -26,12 +26,18 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-top: solid 3px #ed8a2f;
-  background: #fdaa5e;
+  border-top: solid 3px #f7871e;
+  background: #f59f4f;
+  padding: 65px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .img-footer {
- margin: -50px 0px;
+  margin: -50px 0px;
   width: 250px;
 }
 .copyright {
@@ -39,13 +45,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  
 }
 .copyright p {
   font-size: 15px;
   font-weight: bold;
-  text-align: center;
+  text-align: right;
+  padding: 10px;
+}
+.logo-ajust {
+  margin: 0px -240px 0px 0px;
+  display: block;
+}
+.gbr-logo {
+  width: 45px;
 }
 
 /* Cards */
@@ -107,7 +119,7 @@ footer {
   padding: 0px 50px;
   color: #ec7e16;
 }
-.new-calc-text {
+.text-center {
   text-align: center;
   font-weight: 500;
 }
@@ -165,9 +177,34 @@ input:focus-visible {
   display: none;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
   .card-2 {
-    transform: scale(0.8);
+    transform: scale(0.6);
     margin-left: -35px;
+  }
+
+  .text-box {
+    font-size: 18px;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .copyright p {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+  .logo-ajust {
+    margin: 0px -240px 0px 0px;
+    display: block;
+  }
+  .gbr-logo {
+    width: 45px;
+    margin-left: 130px;
   }
 }
