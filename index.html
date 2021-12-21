@@ -30,23 +30,23 @@
             Insira as informações abaixo:
           </p>
           <div class="amount">
-            <p class="text-box">Qual a número de ingredientes?</p>
-            <input type="text" name="number-ingredients" />
+            <p class="text-box">Quantas pessoas a receita serve?</p>
+            <input type="number" name="number-ingredients" class="input-1" />
           </div>
           <div class="amount">
-            <p class="text-box">Qual a quantidade de pessoas?</p>
-            <input type="text" name="number-ingredients" />
+            <p class="text-box">Para quantas pessoas você deseja cozinhar?</p>
+            <input type="number" name="number-people" class="input-2" />
           </div>
           <div>
-            <button class="btn">Avançar</button>
+            <button class="btn btn-advance">Avançar</button>
           </div>
         </div>
       </section>
-      <section class="container card-2">
+      <section class="container card-2 hidden ">
         <div class="card-spacing">
           <p class="text-box table-text">
             Insira nas colunas da esquerda as quantidades dos ingredientes para
-            convertê-la
+            convertê-los
           </p>
           <p  class="text-box ">Digite as quantidades <b>somente </b>em números</p>
           <table>
@@ -65,26 +65,26 @@
                 <tr>
                     <td></td>
                     <td>
-                        <p class="table-text ">Ingrediente : 1</p>
+                        <p class="table-text ">Ingrediente : </p>
                     </td>
                 </tr>
                 <tr>
                     <td class="table-text">
-                        <input type="text"class="input-ingredient" >
-                      </td>
-                      <td class="table-arrow">
-                          <i class="fas fa-arrow-right"></i>
-                      </td>
-                      <td>
-                        <p class="table-text text-box text-coverted-ingredient"></p>
-                      </td>
+                      <input type="number"class="input-3" >
+                    </td>
+                    <td class="table-arrow">
+                       <i class="fas fa-arrow-right"></i>
+                    </td>
+                     <td>
+                        <p class="table-text text-box input-4"></p>
+                     </td>
                 </tr>
             </tr>
           </table>
-          <button class="btn">Novo ingrediente</button>
+          <button class="btn btn-new-ingredient">Novo ingrediente</button>
           <p class="text-center">Clique no botão abaixo para mudar  o cálculo para um novo número de pessoas</p>
-          <button class="btn">Novo cálculo</button>
-              </div>
+          <button class="btn btn-refresh">Novo cálculo</button>
+        </div>
         </section>
     </main>
     <footer>
@@ -114,5 +114,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

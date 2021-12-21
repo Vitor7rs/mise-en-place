@@ -68,6 +68,7 @@ ul {
 
 .card-1 {
   margin: auto;
+  margin-bottom: 30px;
   width: 300px;
   background: #fbeeda;
   border: solid 2px rgba(0, 0, 0, 0.205);
@@ -125,6 +126,11 @@ ul {
 }
 
 /* Style for inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 input {
   text-align: center;
   height: 30px;
@@ -139,7 +145,7 @@ input:focus-visible {
   box-shadow: none;
 }
 
-.input-ingredient {
+.input-3 {
   font-size: 15px;
   width: 100px;
   padding: 15px 0px;
@@ -173,10 +179,6 @@ input:focus-visible {
   transition: 100ms;
 }
 
-.hidden {
-  display: none;
-}
-
 @media only screen and (max-width: 480px) {
   .card-2 {
     transform: scale(0.6);
@@ -207,4 +209,8 @@ input:focus-visible {
     width: 45px;
     margin-left: 130px;
   }
+}
+
+.hidden {
+  display: none;
 }
