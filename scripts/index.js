@@ -95,7 +95,7 @@ const newIngredient = function () {
             </td>
         </tr>
     </tr>`;
-  table.innerHTML += newTr;
+    table.insertAdjacentHTML('beforeend', newTr);
 };
 
 // Função para resetar a tabela
