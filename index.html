@@ -1,119 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mise En Place - calculator</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="img-header">
-        <img src="img/logo-3.png" alt="logo-headder">
-      </div>
-    </header>
-    <main>
-      <section class="container card-1  ">
-        <div class="card-spacing">
-          <p class="text-box home-text">
-            Bem vindo ao Mise En Place, seu conversor de porções para  receitas!
-            
-          </p>
-          <p class="text-center">
-            Insira as informações abaixo:
-          </p>
-          <div class="amount">
-            <p class="text-box">Quantas pessoas a receita serve?</p>
-            <input type="number" name="number-ingredients" class="input-1" />
-          </div>
-          <div class="amount">
-            <p class="text-box">Para quantas pessoas você deseja cozinhar?</p>
-            <input type="number" name="number-people" class="input-2" />
-          </div>
-          <div>
-            <button class="btn btn-advance">Avançar</button>
-          </div>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mise En Place - calculator</title>
+      <link rel="stylesheet" href="css/style.css" />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+        crossorigin="anonymous"
+      />
+    </head>
+    <body>
+      <header>
+        <div class="img-header">
+          <img src="img/logo-3.png" alt="logo-headder">
         </div>
-      </section>
-      <section class="container card-2 hidden ">
-        <div class="card-spacing">
-          <p class="text-box table-text">
-            Insira nas colunas da esquerda as quantidades dos ingredientes para
-            convertê-los
-          </p>
-          <p  class="text-box ">Digite as quantidades <b>somente </b>em números</p>
-          <table>
-            <tr>
-              <td>
-                <p class="text-box table-text">Quantidade padrão</p>
-              </td>
-              <td class="table-arrow">
-                <i class="fas fa-arrow-right"></i>
-              </td>
-              <td>
-                <p class="text-box table-text">quantidade para x pessoas</p>
-              </td>
-            </tr>
-            <tr class="ingredient-number">
-                <tr>
-                    <td></td>
-                    <td>
-                        <p class="table-text ">Ingrediente : </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-text">
-                      <input type="number"class="input-3" >
-                    </td>
-                    <td class="table-arrow">
-                       <i class="fas fa-arrow-right"></i>
-                    </td>
-                     <td>
-                        <p class="table-text text-box input-4"></p>
-                     </td>
-                </tr>
-            </tr>
-          </table>
-          <button class="btn btn-new-ingredient">Novo ingrediente</button>
-          <p class="text-center">Clique no botão abaixo para mudar  o cálculo para um novo número de pessoas</p>
-          <button class="btn btn-refresh">Novo cálculo</button>
-        </div>
-        </section>
-    </main>
-    <footer>
-      <div class="img-footer">
-        <img src="img/logo-2.png" alt="logo-footer">
-      </div>
-      <div class="copyright">
-        <ul>
-          <li>
-            <div>
-              <p>
-                &copy; Copyright  Mise En Place - 2021 feito por 
-              </p>
+      </header>
+      <main>
+        <section class="container card-1" data-card='1'>
+          <div class="card-spacing">
+            <p class="text-box home-text">
+              Bem vindo ao Mise En Place, seu conversor de porções para  receitas!
+            </p>
+            <p class="text-center">
+              Insira as informações abaixo:
+            </p>
+            <div class="amount">
+              <p class="text-box" >Quantas pessoas a receita serve?</p>
+              <input type="number" name="number-ingredients" data-input='1' />
             </div>
-          </li>
-          <li class="logo-ajust">
-           <a href="https://github.com/gabezrodz"><img src="img/gbr-white.png" alt="gbr-logo" class="gbr-logo">
-          </li></a> 
-        </ul>
-      </div>
-    </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="scripts/index.js"></script>
-  </body>
-</html>
+            <div class="amount">
+              <p class="text-box">Para quantas pessoas você deseja cozinhar?</p>
+              <input type="number" name="number-people" data-input='2'/>
+            </div>
+            <div>
+              <button class="btn btn-advance" data-btn-advance>Avançar</button>
+            </div>
+          </div>
+        </section>
+        <section class="container card-2 hidden" data-card='2'>
+          <div class="card-spacing">
+            <p class="text-box table-text">
+              Insira nas colunas da esquerda as quantidades dos ingredientes ( em g/ml ) para
+              convertê-los
+            </p>
+            <p  class="text-box ">Digite as quantidades <b>somente </b>em números</p>
+            <table>
+              <tr>
+                <td>
+                  <p class="text-box table-text" data-amount='1' >Quantidade padrão</p>
+                </td>
+                <td class="table-arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </td>
+                <td>
+                  <p class="text-box table-text" data-amount='2' >quantidade para x pessoas</p>
+                </td>
+              </tr>
+              <tr class="ingredient-number">
+                  <tr>
+                      <td></td>
+                      <td>
+                          <p class="table-text ">Ingrediente 1 : </p>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="table-text">
+                        <input type="number" class="input-3" data-input='3' >
+                      </td>
+                      <td class="table-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                      </td>
+                      <td>
+                          <p class="table-text text-box " data-input='4'></p>
+                      </td>
+                  </tr>
+              </tr>
+            </table>
+            <button class="btn" data-btn="new-ingredient">Novo ingrediente</button>
+            <p class="text-center">Clique no botão abaixo para mudar  o cálculo para um novo número de pessoas</p>
+            <button class="btn" data-btn="refresh">Novo cálculo</button>
+          </div>
+          </section>
+      </main>
+      <footer>
+        <div class="img-footer">
+          <img src="img/logo-2.png" alt="logo-footer">
+        </div>
+        <div class="copyright">
+          <ul>
+            <li>
+              <div>
+                <p>
+                  &copy; Copyright  Mise En Place - 2021 feito por 
+                </p>
+              </div>
+            </li>
+            <li class="logo-ajust">
+            <a target="_blank" href="https://github.com/gabezrodz"><img src="img/gbr-white.png" alt="gbr-logo" class="gbr-logo">
+            </li></a> 
+          </ul>
+        </div>
+      </footer>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <script src="scripts/index.js"></script>
+    </body>
+  </html>

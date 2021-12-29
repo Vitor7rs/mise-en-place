@@ -179,6 +179,11 @@ input:focus-visible {
   transition: 100ms;
 }
 
+.fadeOut {
+  opacity: 0;
+  transition: 0.400s;
+}
+
 @media only screen and (max-width: 480px) {
   .card-2 {
     transform: scale(0.6);
@@ -213,4 +218,5 @@ input:focus-visible {
 
 .hidden {
   display: none;
+  
 }
