@@ -39,7 +39,7 @@ O site opera nas seguintes dimensões de telas:
 <table>
   <tr>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/gabezrodz">
         <img src="https://avatars.githubusercontent.com/u/84934507?s=400&u=2121f2fa27f160de9fc31e854e4353169dfa9f4e&v=4" width="100px;" alt="Foto do Gabriel R. Rodrigues no GitHub"/><br>
         <sub>
           <b>Gabriel R. Rodrigues</b>
@@ -47,7 +47,7 @@ O site opera nas seguintes dimensões de telas:
       </a>
     </td>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/Vitor7rs">
         <img src="https://avatars.githubusercontent.com/u/86400522?v=4" width="100px;" alt="Foto do Vitor Macedo"/><br>
         <sub>
           <b>Vitor Macedo</b>
