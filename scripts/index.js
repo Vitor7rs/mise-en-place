@@ -14,8 +14,8 @@ let table = document.querySelector("table");
 
 // Alterando valor das caixas de exemplo
 const amountText = function () {
-  const input1 = document.querySelector("[data-input='1']").value;
-  const input2 = document.querySelector("[data-input='2']").value;
+  const input1 = document.querySelector("[data-input='1']").value
+  const input2 = document.querySelector("[data-input='2']").value
   const amountTxt1 = document.querySelector("[data-amount='1' ]");
   const amountTxt2 = document.querySelector("[data-amount='2' ]");
   amountTxt1.innerHTML = `Quantidade para ${input1} pessoas`;
@@ -25,16 +25,22 @@ const amountText = function () {
 // Efeitos de display para os cards
   //FadeOut  card 1
 const cardsDisplay1 = function () {
-  card1.classList.add("fadeOut");
-  card2.classList.remove("fadeOut");
+  const input1 = document.querySelector("[data-input='1']").value;
+  const input2 = document.querySelector("[data-input='2']").value;
+  if(input1 !== '' && input2!== ''){
+    card1.classList.add("fadeOut");
+    card2.classList.remove("fadeOut");
+    
+    setTimeout(function () {
+      card1.classList.toggle("hidden");
+    }, 400);
+    
+    setTimeout(function () {
+      card2.classList.toggle("hidden");
+    }, 400);
+  }
+  else {alert('Preencha os campos corretamente!')}
   
-  setTimeout(function () {
-    card1.classList.toggle("hidden");
-  }, 400);
-  
-  setTimeout(function () {
-    card2.classList.toggle("hidden");
-  }, 400);
 };
   //FadeOut  card 2
 const cardsDisplay2 = function () {
@@ -69,7 +75,7 @@ setInterval(function () {
     } else {
       input4[i].textContent = "";
     }
-}, 100);
+}, 10);
 
 // Função pra listar novo ingrediente
 const newIngredient = function () {
