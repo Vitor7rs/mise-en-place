@@ -14,10 +14,7 @@ header {
   justify-content: center;
   height: 280px;
 }
-.img-header {
-  margin-top: -80px;
-  width: 500px;
-}
+
 main {
   width: 100%;
 }
@@ -35,7 +32,18 @@ ul {
   display: flex;
   align-items: center;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
 
+/* Style do logo do headder */
+.img-header {
+  margin-top: -80px;
+  width: 500px;
+}
+
+/* Style do footer */
 .img-footer {
   margin: -50px 0px;
   width: 250px;
@@ -49,18 +57,13 @@ ul {
 .copyright p {
   font-size: 15px;
   font-weight: bold;
-  text-align: right;
+  text-align: center;
   padding: 10px;
 }
-.logo-ajust {
-  margin: 0px -240px 0px 0px;
-  display: block;
-}
-.gbr-logo {
-  width: 45px;
-}
 
-/* Cards */
+
+
+/* Style dos cards Cards */
 .card-spacing {
   margin: auto;
   max-width: 80%;
@@ -86,7 +89,13 @@ ul {
   box-shadow: -4px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* style for texts */
+/* Animação dos cards */
+.fadeOut {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* style dos textos nos cards */
 .text-box {
   font-size: 15px;
   text-align: center;
@@ -125,7 +134,7 @@ ul {
   font-weight: 500;
 }
 
-/* Style for inputs */
+/* Style dos  inputs */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -152,7 +161,7 @@ input:focus-visible {
   border-radius: 10px;
 }
 
-/* Style for buttons */
+/* Style dos buttons */
 .btn {
   display: flex;
   justify-content: center;
@@ -179,15 +188,23 @@ input:focus-visible {
   transition: 100ms;
 }
 
-.fadeOut {
-  opacity: 0;
-  transition: 0.400s;
-}
 
+
+
+/* Responsividade */
 @media only screen and (max-width: 480px) {
+  .img-header {
+    margin-top: -110px;
+  }
+
+  .card-1 {
+    transform: scale(0.8);
+    margin-top: -130px;
+  }
   .card-2 {
     transform: scale(0.6);
     margin-left: -35px;
+    margin-top: -210px;
   }
 
   .text-box {
@@ -210,13 +227,21 @@ input:focus-visible {
     margin: 0px -240px 0px 0px;
     display: block;
   }
-  .gbr-logo {
-    width: 45px;
-    margin-left: 130px;
-  }
+  
 }
 
 .hidden {
   display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .card-1 {
+    margin-top: -165px;
+  }
+  .card-2 {
+    margin-top: -280px;
+    margin-left: -60px;
+    transform: scale(0.5);
+  }
   
 }
