@@ -1,6 +1,6 @@
 # Mise en Place
 
-<h2>Bem vindos ao site Mise en Place, seu conversor de porções para receitas! </h2> 
+<h2>Bem vindos ao site Mise en Place, seu conversor de porções para receitas!  Para acessar o site, <a target="_blank" href="https://gabezrodz.github.io/mise-en-place/">clique aqui!</a> </h2> 
 <img src="img/card1.png">
 
 ## 📋 Um breve resumo do projeto:
