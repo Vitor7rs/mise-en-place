@@ -69,10 +69,13 @@ setInterval(function () {
 
   for (let i = 0; i < input4.length; i++)
     if (input1 !== "" && input2 !== "" && input3 !== "") {
-      input4[i].textContent = `${Math.trunc(
-        (value3[i].value * value2) / value1
-      )} g/ml`;
-    } else {
+      let outputMedia = (value3[i].value * value2) / value1;
+      if(parseFloat(outputMedia)!== parseInt(outputMedia)){
+        outputMedia = outputMedia.toFixed(1);
+      }
+      input4[i].textContent = `${outputMedia} g/ml`;
+    } 
+    else {
       input4[i].textContent = "";
     }
 }, 10);
